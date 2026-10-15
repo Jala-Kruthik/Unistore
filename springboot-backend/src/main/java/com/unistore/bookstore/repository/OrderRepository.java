@@ -1,0 +1,9 @@
+package com.unistore.bookstore.repository;
+
+import com.unistore.bookstore.model.Order;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface OrderRepository extends MongoRepository<Order, String> {
+}
